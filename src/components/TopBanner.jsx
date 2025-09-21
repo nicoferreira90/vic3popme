@@ -1,5 +1,5 @@
 
-function TopBanner({ title, description, backgroundImageUrl = "assets/imgs/cover-image.png" }) {
+function TopBanner({ title, description, backgroundImageUrl = "src/assets/imgs/landing-vic.jpg" }) {
   return (
         <div className="col-span-1 row-span-2 bg-contain relative"
         style={{
@@ -14,7 +14,7 @@ function TopBanner({ title, description, backgroundImageUrl = "assets/imgs/cover
         <div className="flex flex-col absolute inset-0 md:pt-2 lg:pt-3">
             {/* Title section */}
             <div className="flex flex-col justify-start items-start pl-4 md:pl-12 lg:pl-16 pt-8 md:pt-8 lg:pt-12" style={{ maxHeight: "200px" }}>
-                <h1 className="text-white text-4xl md:text-5xl lg:text-8xl" style={{ fontFamily: "'Rosarivo', serif" }}>{title}</h1>
+                <h1 className="text-white text-4xl md:text-5xl lg:text-8xl" style={{ fontFamily: "'Niconne', serif" }}>{title}</h1>
             </div>
         
             {/* Description section */}
