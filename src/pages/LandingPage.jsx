@@ -2,8 +2,10 @@ import TopBanner from "../components/TopBanner";
 import NormalButton from "../components/NormalButton";
 import SideImage from "../components/SideImage";
 import queenVic from '../assets/imgs/queen-vic.jpg';
+import { useNavigate } from 'react-router-dom';
 
 function LandingPage() {
+  const navigate = useNavigate();
   return (
     <div>
       <TopBanner
@@ -25,9 +27,7 @@ function LandingPage() {
               Time to find out!
             </p>
             <NormalButton
-              onClick={() => {
-                window.location.href = "/form";
-              }}
+              onClick={() => navigate('/form')}
             >
               Get Started
             </NormalButton>

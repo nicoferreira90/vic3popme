@@ -1,4 +1,6 @@
+import { Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
+import IntermediatePage from './pages/IntermediatePage';
 import Footer from './components/Footer';
 
 function App() {
@@ -7,7 +9,10 @@ function App() {
     <div className="min-h-screen flex flex-col">
       {/* Main content */}
       <main className="flex-1">
-        <LandingPage />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/form" element={<IntermediatePage />} />
+        </Routes>
       </main>
 
       {/* Footer at the bottom */}
